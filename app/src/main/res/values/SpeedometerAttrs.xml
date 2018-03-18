@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="com.lexis.speedometer.SpeedometerView">
+        <attr name="maximum" format="integer"/>
+        <attr name="marks" format="reference"/>
+        <attr name="scale" format="integer"/>
+        <attr name="label" format="string"/>
+        <attr name="text_color" format="color"/>
+        <attr name="text_size" format="dimension"/>
+        <attr name="color" format="color"/>
+        <attr name="draw_width" format="dimension"/>
+        <attr name="channel" format="integer"/>
+    </declare-styleable>
+</resources>

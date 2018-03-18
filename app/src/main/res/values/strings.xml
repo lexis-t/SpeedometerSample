@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Speedometer Sample</string>
+    <string name="speedometer_label">km/h</string>
+    <string name="tachometer_label">1000/min</string>
+    <string name="datagen_running">Background data generation is running. Do you want to stop it now?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+</resources>

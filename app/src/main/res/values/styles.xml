@@ -1,0 +1,42 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Black.NoTitleBar.Fullscreen">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    
+    <style name="page">
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="text_color">@color/colorText</item>
+        <item name="draw_width">@dimen/draw_width</item>
+    </style>
+
+    <style name="Speedometer" parent="@style/page">
+        <item name="maximum">300</item>
+        <item name="marks">@array/speedometer_marks</item>
+        <item name="scale">1</item>
+        <item name="label">@string/speedometer_label</item>
+        <item name="color">@color/colorSpeedometer</item>
+        <item name="android:background">@color/colorSpeedometerBackground</item>
+        <item name="text_size">@dimen/speedometer_text_size</item>
+        <item name="channel">0</item>
+    </style>
+
+    <style name="Tachometer" parent="@style/page">
+        <item name="maximum">10000</item>
+        <item name="marks">@array/tachometer_marks</item>
+        <item name="scale">1000</item>
+        <item name="label">@string/tachometer_label</item>
+        <item name="color">@color/colorTachometer</item>
+        <item name="android:background">@color/colorTachometerBackground</item>
+        <item name="text_size">@dimen/tachometer_text_size</item>
+        <item name="channel">1</item>
+    </style>
+
+</resources>

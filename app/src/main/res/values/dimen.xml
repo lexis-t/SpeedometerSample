@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="draw_width">5dp</dimen>
+    <dimen name="speedometer_text_size">22sp</dimen>
+    <dimen name="tachometer_text_size">28sp</dimen>
+</resources>

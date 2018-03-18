@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Спидометр Демо</string>
+    <string name="speedometer_label">км/ч</string>
+    <string name="tachometer_label">1000/мин</string>
+    <string name="datagen_running">Фоновая генерация данных запущена. Хотите ли вы ее остановить?</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+</resources>
