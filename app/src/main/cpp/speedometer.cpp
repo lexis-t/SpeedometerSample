@@ -77,13 +77,16 @@ void Java_com_lexis_speedometer_DataCollectionService_nativeStart(JNIEnv *env, j
             }
 
         }
-        g_generators[(std::size_t) channel]->start();
+        g_generators[channel]->start();
     }
 }
 
 extern "C" JNIEXPORT JNICALL
 void Java_com_lexis_speedometer_DataCollectionService_nativeCleanup(JNIEnv*, jclass )
 {
-    std::for_each(g_generators, g_generators + MAX_CHANNELS, [](engine::DataGenerator* e) { if (e) delete e;});
+    for (jsize channel = 0; channel < MAX_CHANNELS; ++channel) {
+        delete(g_generators[channel]);
+        g_generators[channel] = NULL;
+    }
 }
 
